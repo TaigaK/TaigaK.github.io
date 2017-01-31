@@ -1,0 +1,46 @@
+<footer class="page-footer amber darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l3 s12">
+        <h5 class="white-text">{{ site.title }}</h2>
+          <p class="grey-text text-lighten-4">
+           {{ site.description }}
+          </p>
+      </div>
+      <div class="col l6 s12">
+        <h5 class="white-text">bio</h5>
+          <p class="grey-text text-lighten-4">
+            Taiga Kanehara<br>
+            静岡大学情報学部IS B4<br>
+            yuhashi-lab<br>
+            HamaZo Web Engineer
+          </p>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Contact</h5>
+        <ul>
+          <li >
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a class="white-text" href="mailto:{{site.email}}">{{ site.email }}</a>
+          </li>
+          <li>
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <a class="white-text" href="https://github.com/{{site.github_username}}">{{site.github_username}}</a>
+          </li>
+          <li>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <a class="white-text" href="https://twitter.com/{{site.twitter_username}}">{{site.twitter_username}}</a>
+          </li>
+          <li>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <a class="white-text" href="https://facebook.com/{{site.facebook_username}}">{{site.facebook_username}}</a>
+          </li>
+          <li>
+            <i class="fa fa-rss" aria-hidden="true"></i>
+            <a class="white-text" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS subscribe</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

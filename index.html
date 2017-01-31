@@ -1,0 +1,112 @@
+---
+layout: default
+---
+
+<div class="parallax-container">
+  <div class="section no-pad-bo">
+    <div class="container">
+      <br><br>
+      <h1 class="header center amber-text text-darken-4">
+        {{site.title}}
+      </h1>
+      <div class="row center">
+        <h5 class="header col s12 light">
+          ブログとか<br>
+          about meとか<br>
+          個人用のサイト
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="parallax">
+    <img src="/imgs/s01.jpg">
+  </div>
+</div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </h2>
+            <h5 class="center">about</h5>
+            <p class="light">
+              かねはら。静岡大学情報学部ISのB4。yuhashi-lab所属。研究は災害関連システムのログ分析や災害緊急時誘導支援システムなど。<br>
+              HamaZoでWebエンジニアもやってる。遠州をいい感じにこう…<br>
+              趣味は散歩と自転車と映画と音楽
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text">
+              <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+            </h2>
+            <h5 class="center">blog</h5>
+            <p class="light">
+              書いてるブログ。<br>
+              日常のことははまぞうの方のブログ。<br>
+              プログラミングとかそこら辺のことはgithub pagesの方で。大体メモ程度。
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="fa fa-wrench" aria-hidden="true"></i></h2>
+            <h5 class="center">area of interest</h5>
+            <p class="light">
+              興味あるのはRuby/Rails/Docker/Elasticsearch/PHP/Zend Framework/Scala/Elixir<br>
+              その他インフラ、マネジメント、経営周り
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+
+    <div class="parallax"><img src="/imgs/bg2.jpg"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact</h4>
+          <p class="center-align light">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a class="black-text" href="mailto:{{site.email}}">{{ site.email }}</a><br>
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <a class="black-text" href="https://github.com/{{site.github_username}}">{{site.github_username}}</a><br>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <a class="black-text" href="https://twitter.com/{{site.twitter_username}}">{{site.twitter_username}}</a><br>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <a class="black-text" href="https://facebook.com/{{site.facebook_username}}">{{site.facebook_username}}</a><br>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="parallax">
+      <img src="/imgs/bg1.jpg"></div>
+  </div>
+
+<script>
+$(document).ready(function(){
+  $('.parallax').parallax();
+});
+</script>

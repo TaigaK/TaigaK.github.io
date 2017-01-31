@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div class="container">
+
+  <h1 class="center-align">index</h1>
+
+  <div class="row">
+      {% for post in site.posts %}
+        <div class="col s12 m6 l3">
+          <a href="{{ post.url | prepend: site.baseurl }}">
+          <div class="card white hoverable">
+            <div class="card-content white-text">
+              <span class="card-title black-text">
+                Title:{{ post.title }}
+              <span>
+              <div class="card-content">
+                <p class="black-text">
+                  date:{{ post.date | date: "%b %-d, %Y" }}
+                </p>
+              </div>
+            </div>
+            <div class="card-action">
+              <i class="fa fa-link" aria-hidden="true"></i>
+              <a href="{{ post.url | prepend: site.baseurl }}" class="black-text">
+                参照
+              </a>
+            </div>
+          </div>
+          </a>
+        </div>
+      {% endfor %}
+  </div>
+
+</div>

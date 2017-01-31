@@ -1,0 +1,16 @@
+<nav>
+  <div class="nav-wrapper white">
+    <a href="{{ site.baseurl }}/" class="brand-logo" style="color: #444;">{{ site.title }}</a>
+    <a href="#" data-activates="mobile-menu" class="button-collapse" style="color: #FFA500"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="/blog" style="color:#444;">blog</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-menu">
+      <li><a href="/blog">blog</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+$(".button-collapse").sideNav();
+</script>
