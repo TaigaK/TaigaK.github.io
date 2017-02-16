@@ -34,7 +34,7 @@ ubuntuを想定
 	#erl起動確認
 		erl
 
-#####参考ページ
+##### 参考ページ
 	Linuxでkerlを使用して複数バーションのErlang/OTPを導入する
 		http://qiita.com/tatsuya6502/items/f15da8ea6e793c5038a2
 	Elixir/Phoenixを実行してみる
@@ -58,6 +58,6 @@ ubuntuを想定
 	#iex起動確認
 		iex
 
-#####参考ページ
+##### 参考ページ
 	Elixir/Phoenixを実行してみる
 		http://qiita.com/yokaigundan/items/0e8da4938bd91fab400b
