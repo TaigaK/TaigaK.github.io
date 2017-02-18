@@ -6,12 +6,12 @@
   <meta name="description"            content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <meta property="og:locale"      content="ja_JP">
-  <meta property="og:site_name"   content="taigak.github.io">
+  <meta property="og:site_name"   content="taigak.github.io（ブログ）">
   <meta property="og:title"       content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="{{ site.baseurl }}">
+  <meta property="og:type"        content="blog">
+  <meta property="og:url"         content="{{ site.baseurl }}/blog">
   <meta property="og:image"       content="{{ site.baseurl }}/imgs/s01.jpg">
-  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:description" content="{{ site.blog_description }}">
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
