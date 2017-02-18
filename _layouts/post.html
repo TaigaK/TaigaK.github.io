@@ -1,34 +1,48 @@
----
-layout: default
----
-<article class="container">
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include og_posts.html %}
+    {% include head.html %}
+  </head>
+  <body>
 
-  <div style="margin: 0px 0px 50px 0px;">
-  </div>
+    {% include header.html %}
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">
-      {{ page.title }}
-    </h1>
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: "%b %-d, %Y" }}
-      </time>
-      {% if page.author %} •
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">
-          {{ page.author }}
-        </span>
-      </span>
-      {% endif %}
-    </p>
-  </header>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+    <article class="container">
 
-</article>
+      <div style="margin: 0px 0px 50px 0px;">
+      </div>
 
-<div style="margin: 0px 0px 200px 0px;">
-</div>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          {{ page.title }}
+        </h1>
+        <p class="post-meta">
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {{ page.date | date: "%b %-d, %Y" }}
+          </time>
+          {% if page.author %} •
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name">
+              {{ page.author }}
+            </span>
+          </span>
+          {% endif %}
+        </p>
+      </header>
+
+      <div class="post-content" itemprop="articleBody">
+        {{ content }}
+      </div>
+
+    </article>
+
+    <div style="margin: 0px 0px 200px 0px;">
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

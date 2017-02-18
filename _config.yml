@@ -8,7 +8,7 @@
 # Site settings
 title: taigak.github.io
 email: backnum5509[at]gmail.com
-description: 名刺に載せたりするための個人紹介用に作ったページです。それとブログ。<br>© 2017 Taiga Kanehara All rights reserved.
+description: 名刺に載せたりするための個人紹介用に作ったページです。それとブログ。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://taigak.github.io" # the base hostname & protocol for your site
 twitter_username: dekai_iwa
